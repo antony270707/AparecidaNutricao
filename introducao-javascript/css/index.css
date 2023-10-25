@@ -1,113 +1,143 @@
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;
  }
 
 body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
-	margin-bottom: 1em;
+    background-color: #333;
+    height: 3em;
+    color: #2beb9b;
+    margin-bottom: 1em;
 }
 
 header h1{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+    font-size: 2em;
+    display:inline-block;
+    vertical-align: middle;
+
 }
 header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+    font-size: 2em;
+    display:inline-block;
+    vertical-align: middle;
+	margin-left: -300px
 }
 
 header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
+    content: '';
+    display:inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.container-img{
+    width: 40%;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 480px;
 }
 
 .container{
-	width: 60%;
-	height: 100%;
-	margin: 0 auto;
+    float: right;
+    width: 40%;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.container-tabela{
+    float: left;
+    height: 50%;
+    width:50%;
+    margin-left: 50px;
+    
 }
 
 section{
-	margin: 2em 0;
-	overflow: hidden;
+    margin: 2em 0;
+    overflow: hidden;
 }
 
 section h2{
-	font-size: 3em;
-	display: block;
-	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: .5em;
+    font-size: 3em;
+    display: block;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #2beb9b;
+    margin-bottom: .5em;
+
 }
 
 table{
-	width: 100%;
-	margin-bottom : .5em;
+    width: 100%;
+    margin-bottom : .5em;
     table-layout: fixed;
 
 }
 
 td, th {
-	padding: .7em;
-	margin: 0;
-	border: 1px solid #ccc;
-	text-align: center;
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #2beb9b;
+    text-align: center;
 }
 
 th{
-	font-weight: bold;
-	background-color: #EEE;
+    font-weight: bold;
+    background-color: #2beb9b;
 }
 
 label{
-	color: #555;
-	display: block;
-	margin-bottom: .2em;
+    color: #000000;
+    display: block;
+    margin-bottom: .2em;
 }
 
 .campo{
-	margin: 0;
-	padding-bottom: 1em;
-	width: 100%;
-	border: 1px solid #ccc;
-	padding: .7em;
-	width: 100%;
+    margin: 0;
+    padding-bottom: 1em;
+    width: 100%;
+    border: 1px solid #2beb9b;
+    padding: .7em;
+    width: 100%;
 }
 
 .campo-medio{
-	display: inline-block;
-	padding-right: .5em;
+    display: inline-block;
+    padding-right: .5em;
 }
 
 .grupo{
-	width: 32%;
-	display: inline-block;
-	padding: 10px 0px;
+    width: 32%;
+    display: inline-block;
+    padding: 10px 0px;
+}
+.provisorio{
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 1em;
+    width: 100%;
+    border: 1px solid #2beb9b;
+    padding: .7em;
+    width: 100%;
 }
 
 button{
-	padding: .5em 2em;
-	border: 0;
-	border-bottom: 3px solid;
-	font-size: 1.2em;
-	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
-	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
-	width: 20%;
+    padding: .5em 2em;
+    border: 0;
+    border-bottom: 3px solid;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    margin-top: -3px;
+    color: #000000;
+    background-color:#2beb9b;
+    border-color: #2beb9b;
+    width: 20%;
     display: block;
     clear: both;
     margin: 10px 0px;
@@ -115,13 +145,13 @@ button{
 }
 
 button:active{
-	margin-top:0px;
-	border: 0;
+    margin-top:0px;
+    border: 0;
 }
 
 button[disabled=disabled], button:disabled {
     background-color: gray;
-	border-color: darkgray;
+    border-color: darkgray;
 
 }
 
@@ -130,28 +160,38 @@ button[disabled=disabled], button:disabled {
 }
 
 .campo-invalido{
-	border: 1px solid red;
+    border: 1px solid red;
 }
 
 .paciente-invalido {
-	background-color: lightcoral;
+    background-color: lightcoral;
 }
 
 #mensagens-erro {
-	color: red;
+    color: red;
 }
 
 .fadeOut {
-	opacity: 0;
-	transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #filtrar-tabela {
-	width: 200px;
-	height: 35px;
-	margin-bottom: 10px;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 10px;
 }
 
 .invisivel {
-	display: none;
+    display: none;
 }
+.imagem{
+	width: 30%;
+	margin-right: 0px;
+	margin-left: 170px;
+ }
+ .ima{
+	 width: 20%;
+	 margin-right: 0px;
+	 margin-left: 520px;
+  }
